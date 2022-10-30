@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lessons/101/button_learn.dart';
-import 'package:flutter_lessons/101/container_sized_box_learn.dart';
-import 'package:flutter_lessons/101/scaffold_learn.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_lessons/101/appBar_learn.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,9 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData.dark(),
-      home:const ButtonLearn()
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData.dark().copyWith(
+            appBarTheme: const AppBarTheme(
+                backgroundColor: Colors.red,
+                centerTitle: true,
+                systemOverlayStyle: SystemUiOverlayStyle.light,//Burada saat şarj gibi özelliklerin teması değiştiriliyor
+                elevation: 0)),
+        home: const AppBarLearn());
   }
 }
