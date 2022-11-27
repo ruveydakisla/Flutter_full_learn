@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class StatelessLearn extends StatelessWidget {
   const StatelessLearn({super.key});
+  final String text1 = 'deneme'; // 101 seviyesinde textler burada olmalı
 
   @override
   Widget build(BuildContext context) {
@@ -9,14 +10,14 @@ class StatelessLearn extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children: [
-          const TitleTextWidget(
-            text: 'Deneme',
+          TitleTextWidget(
+            text: text1,
           ),
-          const TitleTextWidget(
-            text: 'Deneme',
+          TitleTextWidget(
+            text: text1,
           ),
-          const TitleTextWidget(text: 'Deneme'),
-          const TitleTextWidget(text: 'Deneme'),
+          TitleTextWidget(text: text1),
+          TitleTextWidget(text: text1),
           const _CustomContainer(),
           _emptyBox(),
         ],
