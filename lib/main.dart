@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_lessons/demos/color_demo.dart';
+import 'package:flutter_lessons/demos/color_life_cycle_view.dart';
 
 void main() => runApp(const MyApp());
 
@@ -25,6 +25,6 @@ class MyApp extends StatelessWidget {
                 systemOverlayStyle: SystemUiOverlayStyle
                     .light, //Burada saat şarj gibi özelliklerin teması değiştiriliyor
                 elevation: 0)),
-        home: const ColorDemos(initialColor: Colors.pink));
+        home: const ColorLifeCycleView());
   }
 }
