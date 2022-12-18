@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_lessons/101/custom_widget_learn.dart';
+import 'package:flutter_lessons/101/indicator_learn.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData.dark().copyWith(
+            progressIndicatorTheme:
+                const ProgressIndicatorThemeData(color: Colors.red),
             cardTheme: const CardTheme(color: Colors.green),
             appBarTheme: const AppBarTheme(
                 backgroundColor: Colors.transparent,
@@ -23,6 +25,6 @@ class MyApp extends StatelessWidget {
                 systemOverlayStyle: SystemUiOverlayStyle
                     .light, //Burada saat şarj gibi özelliklerin teması değiştiriliyor
                 elevation: 0)),
-        home:  CustomWidgetLearn());
+        home: const IndicatorLearn());
   }
 }
