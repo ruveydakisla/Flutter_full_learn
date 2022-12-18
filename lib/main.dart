@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_lessons/demos/note_demos_app.dart';
+import 'package:flutter_lessons/101/custom_widget_learn.dart';
 
 void main() => runApp(const MyApp());
 
@@ -23,6 +23,6 @@ class MyApp extends StatelessWidget {
                 systemOverlayStyle: SystemUiOverlayStyle
                     .light, //Burada saat şarj gibi özelliklerin teması değiştiriliyor
                 elevation: 0)),
-        home: const NoteApp());
+        home:  CustomWidgetLearn());
   }
 }
